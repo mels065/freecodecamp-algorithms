@@ -18,4 +18,4 @@ function smallestCommons(arr) {
 }
 
 
-smallestCommons([0]);
+smallestCommons([1, 5]);
