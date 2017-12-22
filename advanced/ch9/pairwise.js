@@ -15,10 +15,10 @@ function pairwise(arr, arg) {
       return subtotal;
 
       function willSkip() {
-        const isSameIndex = i == j,
+        const isSameOrGreaterIndex = i >= j,
               subtotalFound = !!subtotal;
 
-        return isSameIndex || subtotalFound || used[j];
+        return isSameOrGreaterIndex || subtotalFound || used[j];
       }
     }, 0);
   }, 0);
